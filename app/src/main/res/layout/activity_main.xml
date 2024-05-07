@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/navy"
+        android:backgroundTint="#111E65"
+        android:drawableTint="#0D1C73"
+        android:onClick="gotoSingUp"
+        android:padding="20dp"
+        android:shadowColor="#3F51B5"
+        android:text="Sign up"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.978" />
+
+    <Button
+        android:id="@+id/sign_in"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:background="@color/gris"
+        android:onClick="gotoSingIn"
+        android:padding="20dp"
+        android:text="Sign in"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toEndOf="@+id/sign_up"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="262dp"
+        android:layout_height="87dp"
+        android:background="#091347"
+        android:text="Welcome"
+        android:textColor="#706443"
+        android:textSize="60sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
