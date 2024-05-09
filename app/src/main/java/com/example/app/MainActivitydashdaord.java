@@ -38,33 +38,5 @@ public class MainActivitydashdaord extends AppCompatActivity {
         ;
 
 
-
-        public class MainActivity extends AppCompatActivity {
-
-            @Override
-            protected void onCreate(Bundle savedInstanceState) {
-                super.onCreate(savedInstanceState);
-                setContentView(R.layout.activity_main);
-
-                RecyclerView recyclerView = findViewById(R.id.recycleview);
-
-                // Créer une liste de données
-                ArrayList<String> dataList = new ArrayList<>();
-                dataList.add("Élément 1");
-                dataList.add("Élément 2");
-                dataList.add("Élément 3");
-
-                // Créer un adaptateur et lui fournir les données
-                MyAdapter adapter = new MyAdapter(dataList);
-
-                // Associer l'adaptateur à votre RecyclerView
-                recyclerView.setAdapter(adapter);
-
-                // Définir le gestionnaire de disposition pour le RecyclerView
-                recyclerView.setLayoutManager(new LinearLayoutManager(this));
-            }
-        }
-
-
     }
 }
