@@ -28,12 +28,22 @@ button.setOnClickListener(new View.OnClickListener() {
         finish();
     }
 });
-Button button1=findViewById(R.id.visualisation)
-                ;
+Button button1=findViewById(R.id.visualisation);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity2.this, MainActivityliste.class);
+                Intent intent = new Intent(MainActivity2.this,MainActivityliste.class);
+
+                startActivity(intent);
+                finish();
+            }
+        });
+        Button button2=findViewById(R.id.gestion)   ;
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this,AddActivity.class);
 
                 startActivity(intent);
                 finish();
